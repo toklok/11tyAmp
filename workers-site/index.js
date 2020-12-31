@@ -25,7 +25,7 @@ async function handlePostRequest(request) {
   };
 
   let hookResponse = await fetch(
-    'https://maker.ifttt.com/trigger/pool_contact/with/key/m1xWNlbxAXrszXtpousLX',
+    FORM_ENDPOINT,
     requestOptions
   );
 

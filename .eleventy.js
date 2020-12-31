@@ -1,12 +1,20 @@
 const ampPlugin = require('@ampproject/eleventy-plugin-amp');
 
 module.exports = function (eleventyConfig) {
-  // eleventyConfig.addPassthroughCopy('./src/favicon-32x32.png');
-  // eleventyConfig.addPassthroughCopy('./src/robots.txt');
+  // eleventyConfig.setTemplateFormats([
+  //   "liquid",
+  //   "html",
+  //   "txt",
+  //   "png"
+  // ]);
   eleventyConfig.addPlugin(ampPlugin, {
     ampCache: false,
-    ampRuntimeHost: 'http://localhost:8080',
-    downloadAmpRuntime: false,
+    downloadAmpRuntime: true,
+    ampRuntimeHost:
+      process.env.ENV === 'prod' ? 'https://stylebarbershop.info' : 'http://localhost:8080',
+    experimentEsm: true,
+    experimentImg: true,
+    validation: false,
     imageOptimization: true,
     imageBasePath: `${__dirname}/src`
   });
