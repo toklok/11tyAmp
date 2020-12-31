@@ -1,9 +1,9 @@
-name = "11ty_barbershop"
+name = "11ty_mindful"
 type = "webpack"
 account_id = "889c69c3a2ed27db8cbfdc65709ba4dd"
 workers_dev = false
-route = "stylebarbershop.info/*"
-zone_id = "a764a2d404ec87a0374fde5122e8ccb1"
+route = "mindful.associates/*"
+zone_id = "a0149c945908ca19cc97402a855b6658"
 
 [site]
 bucket = "./_site"

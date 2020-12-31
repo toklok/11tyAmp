@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     ampCache: false,
     downloadAmpRuntime: true,
     ampRuntimeHost:
-      process.env.ENV === 'prod' ? 'https://stylebarbershop.info' : 'http://localhost:8080',
+      process.env.ENV === 'prod' ? 'https://mindful.associates' : 'http://localhost:8080',
     experimentEsm: true,
     experimentImg: true,
     validation: false,

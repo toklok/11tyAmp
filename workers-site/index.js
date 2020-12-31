@@ -25,7 +25,7 @@ async function handlePostRequest(request) {
   };
 
   let hookResponse = await fetch(
-    'https://maker.ifttt.com/trigger/barbershop_contact/with/key/cKeJhZdXBvhlVFrglg7o36',
+    'https://maker.ifttt.com/trigger/mindful_flooring/with/key/cKeJhZdXBvhlVFrglg7o36',
     requestOptions
   );
 

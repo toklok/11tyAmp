@@ -1,6 +1,6 @@
 ---
 layout: layouts/default.liquid
-title: Barbershop located in Woonsocket, RI, 02895 | Style Barber shop
+title: Mindful Associates | Mindful Flooring
 ---
 
 <amp-animation id="showAnim" layout="nodisplay">
@@ -46,68 +46,17 @@ title: Barbershop located in Woonsocket, RI, 02895 | Style Barber shop
     <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer>
   </h1>
 
-  
-  <section class="parallax-image-window">
-    <amp-animation id="parallaxTransition"
-      layout="nodisplay">
-      <script type="application/json">
-        {
-          "duration": "1",
-          "fill": "both",
-          "direction": "reverse",
-          "animations": [
-            {
-              "selector": "#parallaxImage",
-              "keyframes": [
-                { "transform": "translateY(-40%)" }
-              ]
-            }
-          ]
-        }
-      </script>
-    </amp-animation>
-    <amp-position-observer on="scroll:parallaxTransition.seekTo(percent=event.percent)"
-      intersection-ratios="0"
-      layout="nodisplay">
-    </amp-position-observer>
-    <amp-img id="parallaxImage" data-hero src="img/stylebarbershop_storefront.jpg" width="433" height="577" layout="responsive" alt="Style barbershop store front side of building"></amp-img>
-  </section>
-
   <h2>About Us</h2>
 
-  <p>Dave has been cutting hair for a long time since he was young kid and professionally since 2001.</p>
-
-  <h3>Business Hours</h3>
-
-  <ul>
-    <li>Monday - Closed</li>
-    <li>Tuesday - 9:00AM to 7:00PM</li>
-    <li>Wednesday - 9:00AM to 7:00PM</li>
-    <li>Thursday - 9:00AM to 7:00PM</li>
-    <li>Friday - 9:00AM to 7:00PM</li>
-    <li>Saturday - 9:00AM to 5:00PM</li>
-    <li>Sunday - Closed</li>
-  </ul>
-
-  <h4>Style Barber shop is located at 697 Wood Ave, Woonsocket, RI 02895</h4>
-
-  <amp-iframe 
-    width="600"
-    height="400"
-    title="Style Barber shop map pin, Woonsocket, RI"
-    layout="responsive"
-    sandbox="allow-scripts allow-same-origin allow-popups"
-    frameborder="0"
-    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXbga9Mhr5IkRf578ybnCIP0&key=AIzaSyBTuZkM6bF1MfAswPQ1PMQqx0KE810yTtg">
-  </amp-iframe>
+  <p>Mike has been flooring and installing floors and servicing floors for 10 years.</p>
 
   <p [text]="'Thanks, ' + individual +'! You have successfully contacted us.'">
     Contact us
   </p>
   <form method="post" action-xhr="/"  on="submit-success: AMP.setState({ 'individual': event.response.value1 })" target="_blank">
-    <input type="text" name="value1" placeholder="Name" required />
-    <input type="tel" name="value2" placeholder="Phone Number" required />
-    <input type="text" name="value3" placeholder="How can we help you?" />
+    <input type="text" name="Value1" placeholder="Name" required />
+    <input type="tel" name="Value2" placeholder="Phone Number" required />
+    <input type="text" name="Value3" placeholder="How can we help you?" />
     <input type="submit" value="Contact Us" />
   </form>
 </section>
