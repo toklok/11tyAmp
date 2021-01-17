@@ -54,9 +54,9 @@ title: Mindful Associates | Mindful Flooring
     Contact us
   </p>
   <form method="post" action-xhr="/"  on="submit-success: AMP.setState({ 'individual': event.response.value1 })" target="_blank">
-    <input type="text" name="Value1" placeholder="Name" required />
-    <input type="tel" name="Value2" placeholder="Phone Number" required />
-    <input type="text" name="Value3" placeholder="How can we help you?" />
+    <input type="text" name="value1" placeholder="Name" required />
+    <input type="tel" name="value2" placeholder="Phone Number" required />
+    <input type="text" name="value3" placeholder="How can we help you?" />
     <input type="submit" value="Contact Us" />
   </form>
 </section>

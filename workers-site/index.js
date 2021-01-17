@@ -15,13 +15,13 @@ const DEBUG = false;
 async function handlePostRequest(request) {
   let reqBody = await readRequestBody(request);
 
-  let myHeaders = new Headers();
+  let myHeaders = new Headers({'content-type': 'application/json'});
 
   let requestOptions = {
     method: 'POST',
     headers: myHeaders,
     body: reqBody,
-    redirect: 'follow',
+    redirect: 'follow'
   };
 
   let hookResponse = await fetch(
